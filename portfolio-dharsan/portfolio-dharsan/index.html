@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dharsan S R | Full Stack & Data Science Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Dharsan S R – Full Stack Developer and Data Science enthusiast skilled in Java, Python, SQL, MongoDB, React, and ML." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">D<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">👋 Available for Opportunities</div>
+      <h1 class="hero-name">Dharsan <span class="gradient-text">S R</span></h1>
+      <div class="hero-roles">
+        <span class="role-text" id="role-text">Full Stack Developer</span>
+      </div>
+      <p class="hero-desc">
+        Motivated Full Stack &amp; Data Science enthusiast with strong foundations in
+        <strong>Java, Python, SQL</strong> and <strong>MongoDB</strong>. Passionate about
+        building data-driven applications and solving real-world problems.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:dsakayakumar@gmail.com" title="Email" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m22 7-10 7L2 7" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/dharsan8805/?originalSubdomain=in" target="_blank" title="LinkedIn"
+          class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://github.com/Dharsan-8805" target="_blank" title="GitHub" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+          </svg>
+        </a>
+        <a href="https://www.hackerrank.com/profile/23cs0401" target="_blank" title="HackerRank" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.188 17.938h-1.625V12.75H8.062v5.188H6.438V6.062h1.624v5.188h2.126V6.062h1.624v11.876zm4.125 0l-2.25-5.813v5.813h-1.5V6.062h1.5l2.25 5.813V6.062h1.5v11.876h-1.5z" />
+          </svg>
+        </a>
+        <a href="https://leetcode.com/u/dharsan8805/" target="_blank" title="LeetCode" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="avatar-card">
+            <div class="avatar-ring">
+              <div class="avatar-inner">DS</div>
+            </div>
+            <div class="avatar-glow"></div>
+          </div>
+          <div class="stat-cards">
+            <div class="stat-card">
+              <span class="stat-num">250+</span>
+              <span class="stat-label">DSA Problems</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">7.84</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm a <strong>Computer Science Engineering student</strong> at KPR Institute of Engineering and Technology,
+            Coimbatore, driven by a passion for crafting intelligent, full-stack solutions.</p>
+          <p>My expertise spans <strong>UI/UX design, machine learning, web development</strong>, and <strong>data
+              analysis</strong>. I love turning complex problems into clean, user-centric digital experiences.</p>
+          <p>Beyond academics, I've solved <strong>250+ DSA problems</strong> on LeetCode and earned certifications from
+            HackerRank, Infosys, and Analytics Vidhya — always pushing to grow.</p>
+          <div class="about-tags">
+            <span class="tag">🎯 Problem Solver</span>
+            <span class="tag">🤖 ML Enthusiast</span>
+            <span class="tag">🎨 UI/UX Designer</span>
+            <span class="tag">🌐 Web Developer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2>Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <div class="skill-pills">
+            <span>Figma</span><span>Wireframing</span><span>Prototyping</span><span>User Flow</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">🤖</div>
+          <h3>Data Science & AI/ML</h3>
+          <div class="skill-pills">
+            <span>Python</span><span>NumPy</span><span>Pandas</span><span>Scikit-learn</span><span>Statistics</span><span>EDA</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">📊</div>
+          <h3>Data Analysis</h3>
+          <div class="skill-pills">
+            <span>Excel</span><span>Power BI</span><span>Matplotlib</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">🌐</div>
+          <h3>Web Development</h3>
+          <div class="skill-pills">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span><span>Node.js</span><span>Express.js</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">🗄️</div>
+          <h3>Databases</h3>
+          <div class="skill-pills">
+            <span>MongoDB</span><span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">💡</div>
+          <h3>Soft Skills</h3>
+          <div class="skill-pills">
+            <span>Communication</span><span>Teamwork</span><span>Time Management</span><span>Analytical Thinking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Work History</span>
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Front-End Developer Intern</h3>
+                <span class="company">Zidio Development</span>
+              </div>
+              <span class="timeline-date">Jun 2025 – Jul 2025</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Developed responsive UI using HTML, CSS, JavaScript, React.js with REST APIs, validation, and Git
+                collaboration.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>React.js</span><span>JavaScript</span><span>REST APIs</span><span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card" data-category="design">
+          <div class="project-top">
+            <div class="project-icon">🎬</div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="View Project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3>Movie Ticket Booking App</h3>
+          <p>Designed a mobile app with user-friendly screens — home, details, seat selection, and payment — using clean
+            layout and interactive prototype.</p>
+          <div class="project-tech">
+            <span>Figma</span><span>UI/UX Design</span><span>Prototyping</span>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-category="ml">
+          <div class="project-top">
+            <div class="project-icon">✈️</div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="View Project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3>Flight Delay Prediction</h3>
+          <p>Built a machine learning model using Python to predict flight delays with preprocessing, feature
+            engineering, Logistic Regression and Random Forest. Evaluated with accuracy, precision, recall and
+            insightful visualizations.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ml">
+          <div class="project-top">
+            <div class="project-icon">❤️</div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="View Project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3>Vital Signs Anomaly Detection</h3>
+          <p>Built a time-series anomaly detection system with preprocessing, visualization, prediction, and evaluation
+            metrics using Flask for deployment.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Flask</span>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-category="web">
+          <div class="project-top">
+            <div class="project-icon">🏘️</div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="View Project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3>Community Hub</h3>
+          <p>Built a web app for reporting local issues, helping NGOs and authorities prioritize solutions. Enables
+            community-driven problem reporting with real-time tracking.</p>
+          <div class="project-tech">
+            <span>Node.js</span><span>MongoDB</span><span>Express.js</span>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-category="ai">
+          <div class="project-top">
+            <div class="project-icon">🌍</div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="View Project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3>VentureAI – AI Travel Assistant</h3>
+          <p>Developed an AI-powered travel assistant chatbot using Python, Streamlit, and Google Gemini AI for smart
+            travel recommendations and trip planning. Designed a modern chat-based interface with dynamic responses,
+            chat history, and ML-based query handling.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Streamlit</span><span>Google Gemini AI</span><span>ML</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Journey</span>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card current">
+          <div class="edu-badge">🎓 Current</div>
+          <div class="edu-icon">🏛️</div>
+          <h3>KPR Institute of Engineering & Technology</h3>
+          <p class="edu-degree">B.E. Computer Science and Engineering</p>
+          <p class="edu-location">Coimbatore</p>
+          <div class="edu-meta">
+            <span class="edu-year">2023 – 2027</span>
+            <span class="edu-score">CGPA: 7.84</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🏫</div>
+          <h3>Vikas Vidyalaya Matriculation HSS</h3>
+          <p class="edu-degree">Higher Secondary Education</p>
+          <p class="edu-location">Tirupur</p>
+          <div class="edu-meta">
+            <span class="edu-year">2019 – 2023</span>
+            <span class="edu-score">HSC: 87.5%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2>Certifications & Achievements</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon">🏆</div>
+          <h3>LeetCode</h3>
+          <p>Solved <strong>250+ DSA problems</strong> demonstrating strong algorithmic and problem-solving skills.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">✅</div>
+          <h3>HackerRank</h3>
+          <p>Certified in <strong>Problem Solving, Python, Java, SQL</strong>.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🤖</div>
+          <h3>Infosys</h3>
+          <p>Certified in <strong>GenAI</strong> fundamentals and applications.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">📈</div>
+          <h3>Analytics Vidhya</h3>
+          <p>Certified in <strong>Regression</strong> techniques for machine learning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2>Get In Touch</h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-intro">I'm always open to new opportunities, collaborations, or just a friendly chat about
+            tech!</p>
+          <div class="contact-items">
+            <a href="mailto:dsakayakumar@gmail.com" class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-val">dsakayakumar@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+917708238281" class="contact-item">
+              <div class="contact-item-icon">📱</div>
+              <div>
+                <span class="contact-item-label">Phone</span>
+                <span class="contact-item-val">+91 7708238281</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/dharsan8805/?originalSubdomain=in" target="_blank"
+              class="contact-item">
+              <div class="contact-item-icon">💼</div>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-val">Connect with me</span>
+              </div>
+            </a>
+            <a href="https://github.com/Dharsan-8805" target="_blank" class="contact-item">
+              <div class="contact-item-icon">🐙</div>
+              <div>
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-val">View my code</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Hi Dharsan, I'd love to connect about..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="send-btn">Send Message 🚀</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-sub">© 2026 All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
